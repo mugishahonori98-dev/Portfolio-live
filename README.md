@@ -22,6 +22,8 @@ The following areas are intentionally easy to update:
 4. **CV:** add a `cv.pdf` file and link it from the navigation or contact area.
 5. **Social preview:** replace `og:image` with a deployed absolute image URL before launch.
 6. **Deployment:** set the canonical deployed URL, sitemap, and robots policy after the Vercel deployment is confirmed.
+7. **Social proof:** add verified experience, certifications, testimonials, and achievements when available.
+8. **Case studies:** replace concept status labels with real hardware photos, demos, and individual repository links as each project is built.
 
 ## Deployment
 
