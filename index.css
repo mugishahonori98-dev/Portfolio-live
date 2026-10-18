@@ -84,17 +84,10 @@ img {
     gap: 10px;
 }
 
-.brand-mark {
-    align-items: center;
-    background: var(--lime);
-    border-radius: 50%;
-    color: var(--green);
-    display: inline-flex;
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    height: 30px;
-    justify-content: center;
-    width: 30px;
+.brand-logo {
+    flex: 0 0 auto;
+    height: 32px;
+    width: 32px;
 }
 
 .brand-name {
@@ -106,6 +99,18 @@ img {
 .brand-name span,
 .section-heading h2 span {
     color: var(--lime);
+}
+
+.cv-brand {
+    align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.cv-brand .brand-logo {
+    height: 38px;
+    width: 38px;
 }
 
 .nav-links {

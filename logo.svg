@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">HM monogram</title>
+  <desc id="desc">Honorine Mugisha monogram logo</desc>
+  <rect width="160" height="160" rx="48" fill="#d5ef9d"/>
+  <path d="M38 42v76M38 80h39M77 42v76M91 42v76M91 42h30M91 80h24M91 118h30" fill="none" stroke="#2e6b50" stroke-linecap="round" stroke-linejoin="round" stroke-width="11"/>
+  <circle cx="124" cy="42" r="6" fill="#2e6b50"/>
+</svg>
