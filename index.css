@@ -121,7 +121,7 @@ img {
 
 .nav-links a,
 .nav-cta,
-.footer-inner a:last-child {
+.footer-inner > a:last-child {
     font-size: 11px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -133,7 +133,7 @@ img {
 }
 
 .nav-links a:hover,
-.footer-inner a:last-child:hover {
+.footer-inner > a:last-child:hover {
     color: var(--lime);
     opacity: 1;
 }
@@ -689,6 +689,257 @@ h2 {
 .garden-sun {
     color: rgba(255, 255, 255, 0.7);
     font-size: 120px;
+}
+
+/* Concept illustrations: diagrams and placeholders, never measured project data. */
+.concept-visual {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    isolation: isolate;
+    justify-content: center;
+    min-width: 0;
+    padding: 76px 24px 66px;
+    position: relative;
+}
+
+.concept-visual::before {
+    pointer-events: none;
+    z-index: -1;
+}
+
+.concept-visual .project-badge,
+.concept-visual .visual-caption {
+    color: var(--ink);
+}
+
+.concept-visual .project-badge {
+    border-color: currentColor;
+}
+
+.attendance-visual.concept-visual {
+    color: var(--lime);
+}
+
+.attendance-visual.concept-visual .project-badge,
+.attendance-visual.concept-visual .visual-caption {
+    color: var(--lime);
+}
+
+.concept-art {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    max-width: 100%;
+    width: min(100%, 280px);
+}
+
+.concept-part-label,
+.concept-flow-label,
+.wireframe-heading,
+.wireframe-row {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+}
+
+.concept-flow-label {
+    line-height: 1.8;
+    text-align: center;
+}
+
+.concept-arrow {
+    font-size: 24px;
+}
+
+.rfid-concept {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.rfid-card {
+    border: 1px solid currentColor;
+    border-radius: 7px;
+    display: block;
+    height: 65px;
+    transform: rotate(-12deg);
+    width: 45px;
+}
+
+.rfid-card::before {
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    content: '';
+    height: 15px;
+    left: 9px;
+    position: absolute;
+    top: 12px;
+    width: 12px;
+}
+
+.scan-rings {
+    border-right: 3px double currentColor;
+    border-radius: 50%;
+    height: 35px;
+    position: absolute;
+    right: -3px;
+    top: 15px;
+    width: 20px;
+}
+
+.dashboard-concept {
+    border: 1px solid currentColor;
+    flex: 1;
+    max-width: 150px;
+    min-width: 0;
+    padding: 12px;
+}
+
+.wireframe-heading {
+    border-bottom: 1px solid currentColor;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+
+.wireframe-row {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.wireframe-row i {
+    border-bottom: 1px dashed currentColor;
+    flex: 1;
+}
+
+.concept-sensor-art {
+    color: var(--green);
+    flex-direction: column;
+}
+
+.water-vessel,
+.plant-concept {
+    height: 110px;
+    position: relative;
+    width: 110px;
+}
+
+.water-vessel {
+    border: 2px solid currentColor;
+    border-radius: 0 0 25px 25px;
+    height: 90px;
+    margin-top: 20px;
+}
+
+.water-surface {
+    background: rgba(46, 107, 80, 0.12);
+    border-radius: 0 0 22px 22px;
+    border-top: 2px dashed currentColor;
+    inset: 28px 5px 5px;
+    position: absolute;
+}
+
+.sensor-probe {
+    background: var(--paper);
+    border: 2px solid var(--green);
+    border-radius: 4px;
+    height: 60px;
+    position: absolute;
+    right: 22px;
+    top: -15px;
+    width: 10px;
+    z-index: 1;
+}
+
+.plant-pot {
+    border: 2px solid currentColor;
+    border-radius: 2px 2px 18px 18px;
+    bottom: 0;
+    height: 42px;
+    left: 15px;
+    position: absolute;
+    width: 80px;
+}
+
+.plant-stem {
+    border-left: 2px solid currentColor;
+    height: 60px;
+    left: 48px;
+    position: absolute;
+    top: 10px;
+}
+
+.plant-stem::before,
+.plant-stem::after {
+    background: rgba(46, 107, 80, 0.12);
+    border: 2px solid currentColor;
+    border-radius: 0 70% 0 70%;
+    content: '';
+    height: 17px;
+    position: absolute;
+    width: 25px;
+}
+
+.plant-stem::before {
+    left: -27px;
+    top: 12px;
+}
+
+.plant-stem::after {
+    left: 0;
+    top: 0;
+    transform: scaleX(-1);
+}
+
+.plant-concept .sensor-probe {
+    right: 22px;
+    top: 35px;
+}
+
+.concept-flow {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    list-style: none;
+    width: 100%;
+}
+
+.concept-flow li {
+    background: rgba(213, 239, 157, 0.12);
+    border: 1px solid rgba(213, 239, 157, 0.55);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    padding: 18px 12px;
+    position: relative;
+}
+
+.concept-flow li + li::before {
+    content: '\2192';
+    font-size: 20px;
+    left: -22px;
+    position: absolute;
+    top: 40%;
+}
+
+.concept-step,
+.concept-flow strong {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+}
+
+.concept-flow li > span:last-child {
+    color: var(--paper);
+    font-size: 11px;
 }
 
 .contact-section {
@@ -1255,12 +1506,53 @@ h2 {
 
 .footer-inner {
     align-items: center;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 20px 24px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding-bottom: 9px;
+    padding-top: 9px;
 }
 
-.footer-inner p,
-.footer-inner a:last-child {
+.footer-inner > .brand {
+    justify-self: start;
+}
+
+.footer-inner > .footer-links {
+    flex-wrap: wrap;
+    gap: 4px 24px;
+    grid-column: 1 / -1;
+    justify-content: center;
+    min-width: 0;
+}
+
+.footer-inner .footer-links a {
+    align-items: center;
+    display: inline-flex;
+    min-height: 44px;
+    padding: 8px 0;
+}
+
+.footer-inner > .footer-links + .footer-links {
+    gap: 4px 12px;
+}
+
+.footer-inner > p {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.footer-inner > a:last-child {
+    align-items: center;
+    display: inline-flex;
+    gap: 6px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    min-height: 44px;
+}
+
+.footer-inner > p,
+.footer-inner > a:last-child {
     color: rgba(244, 246, 240, 0.5);
     font-size: 9px;
     letter-spacing: 0.05em;
@@ -1268,6 +1560,17 @@ h2 {
 }
 
 @media screen and (max-width: 760px) {
+    .concept-flow {
+        gap: 28px;
+        grid-template-columns: 1fr;
+    }
+
+    .concept-flow li + li::before {
+        content: '\2193';
+        left: calc(50% - 6px);
+        top: -31px;
+    }
+
     .site-header {
         min-height: 900px;
     }

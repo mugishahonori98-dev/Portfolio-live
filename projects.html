@@ -14,11 +14,44 @@
     <main>
         <section class="inner-hero container"><p class="eyebrow"><span class="eyebrow-line"></span> 03 / Selected work</p><h1>Small projects,<br><em>real possibilities.</em></h1><p class="inner-lead">Concepts designed to show how I think, what I am learning, and where a useful product could go next.</p></section>
         <section class="section page-section soft-section"><div class="container project-detail-list">
-            <article class="project-detail-card"><div class="case-visual attendance-visual"><span class="project-badge">Featured concept</span><div class="attendance-screen"><span class="screen-dot"></span><span class="screen-line screen-line-long"></span><span class="screen-line"></span><span class="screen-line screen-line-short"></span></div><span class="visual-caption">01 / 03</span></div><div class="case-copy"><p class="project-type">IoT · Beginner project</p><h2>IoT Smart Attendance System</h2><p>A connected attendance concept using RFID cards to record student check-ins quickly and accurately.</p><div class="project-meta"><span>RFID</span><span>Arduino</span><span>Web dashboard</span></div><a class="project-link" href="project-attendance.html">Read the case study <span aria-hidden="true">↗</span></a></div></article>
-            <article class="project-detail-card"><div class="case-visual water-visual"><span class="project-index">02 / 03</span><span class="water-drop" aria-hidden="true">⌁</span><span class="visual-caption">Clean data<br>better decisions</span></div><div class="case-copy"><p class="project-type">IoT · Beginner project</p><h2>Water Quality Monitor</h2><p>A sensor-led concept for observing unusual changes in stored water and surfacing a simple warning.</p><div class="project-meta"><span>Sensors</span><span>Python</span></div><p class="project-status">Concept ready for implementation</p></div></article>
-            <article class="project-detail-card"><div class="case-visual garden-visual"><span class="project-index">03 / 03</span><span class="garden-sun" aria-hidden="true">☼</span><span class="visual-caption">Grow smarter<br>with less waste</span></div><div class="case-copy"><p class="project-type">IoT · Beginner project</p><h2>Smart Plant Monitor</h2><p>A moisture-sensing concept that helps users understand when a plant needs attention.</p><div class="project-meta"><span>Arduino</span><span>Moisture sensor</span></div><p class="project-status">Concept ready for implementation</p></div></article>
+            <article class="project-detail-card"><div class="case-visual attendance-visual concept-visual"><span class="project-badge">Featured concept</span>
+                            <div class="concept-art" role="img" aria-label="Prototype idea: an RFID card scan would feed a future attendance dashboard. Wireframe only.">
+                                <div class="rfid-concept"><span class="rfid-card" aria-hidden="true"></span><span class="scan-rings" aria-hidden="true"></span><span class="concept-part-label">RFID scan</span></div>
+                                <span class="concept-arrow" aria-hidden="true">&rarr;</span>
+                                <div class="dashboard-concept"><span class="wireframe-heading">Dashboard</span><span class="wireframe-row">Student <i></i></span><span class="wireframe-row">Time <i></i></span><span class="wireframe-row">Status <i></i></span></div>
+                            </div>
+                            <span class="concept-flow-label">Planned flow: scan &rarr; record &rarr; review</span>
+                            <span class="visual-caption">01 / 03 &middot; Prototype idea</span></div><div class="case-copy"><p class="project-type">IoT · Beginner project</p><h2>IoT Smart Attendance System</h2><p><strong>Problem:</strong> Manual attendance can be slow, difficult to review, and vulnerable to recording errors.</p><p><strong>Proposed solution:</strong> An RFID reader would scan a student card, an Arduino or compatible microcontroller would process it, and a future dashboard would record the attendance.</p><p><strong>Technology ideas:</strong></p><div class="project-meta"><span>RFID</span><span>Arduino</span><span>Sensors</span><span>Django</span><span>SQLite</span><span>Dashboard</span></div><p><strong>Planned features:</strong> Student identification, timestamp, attendance status, duplicate scan prevention, student record lookup, dashboard summary, and future export.</p><p class="project-status">Concept &middot; Planned implementation</p><a class="project-link" href="project-attendance.html">Read the case study <span aria-hidden="true">↗</span></a></div></article>
+            <article class="project-detail-card"><div class="case-visual water-visual concept-visual"><span class="project-badge">Concept</span><span class="project-index">02 / 03</span>
+                            <div class="concept-art concept-sensor-art" role="img" aria-label="Prototype idea: a sensor would collect water readings for a future monitoring dashboard. No measured data shown."><div class="water-vessel" aria-hidden="true"><span class="sensor-probe"></span><span class="water-surface"></span></div><span class="concept-part-label">Water sensing</span></div>
+                            <span class="concept-flow-label">Planned flow: sensor &rarr; readings &rarr; dashboard</span>
+                            <span class="visual-caption">Prototype idea &middot; Future implementation</span></div><div class="case-copy"><p class="project-type">IoT · Beginner project</p><h2>Water Quality Monitor</h2><p><strong>Problem:</strong> Changes in stored water may not be noticed early.</p><p><strong>Proposed solution:</strong> Sensors would collect readings and show unusual changes through a simple monitoring dashboard.</p><p><strong>Technology ideas:</strong></p><div class="project-meta"><span>Sensors</span><span>Arduino</span><span>Python</span><span>Threshold alerts</span><span>Data dashboard</span></div><p class="project-status">Beginner IoT concept</p></div></article>
+            <article class="project-detail-card"><div class="case-visual garden-visual concept-visual"><span class="project-badge">Concept</span><span class="project-index">03 / 03</span>
+                            <div class="concept-art concept-sensor-art" role="img" aria-label="Prototype idea: a soil-moisture sensor would provide a watering indication. No live readings shown."><div class="plant-concept" aria-hidden="true"><span class="plant-stem"></span><span class="plant-pot"></span><span class="sensor-probe"></span></div><span class="concept-part-label">Soil moisture sensing</span></div>
+                            <span class="concept-flow-label">Planned flow: soil &rarr; sensor &rarr; indication</span>
+                            <span class="visual-caption">Prototype idea &middot; Future implementation</span></div><div class="case-copy"><p class="project-type">IoT · Beginner project</p><h2>Smart Plant Monitor</h2><p><strong>Problem:</strong> Plants may be forgotten or overwatered.</p><p><strong>Proposed solution:</strong> A soil-moisture sensor would measure dryness and provide a simple watering indication.</p><p><strong>Technology ideas:</strong></p><div class="project-meta"><span>Arduino</span><span>Moisture sensor</span><span>Embedded logic</span><span>Automation</span></div><p class="project-status">Beginner IoT concept</p></div></article>
         </div></section>
     </main>
-    <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html"><img class="brand-logo" src="logo.svg" alt=""><span class="brand-name">Honorine<span>.</span></span></a><div class="footer-links"><a href="contact.html">Email</a><a href="https://wa.me/250783981828" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://github.com/mugishahonori98-dev/Portfolio-live" target="_blank" rel="noopener noreferrer">GitHub</a></div><a href="index.html">Home ↑</a></div></footer>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand" href="index.html" aria-label="Honorine Mugisha home"><img class="brand-logo" src="logo.svg" alt=""><span class="brand-name">Honorine<span>.</span></span></a>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="cv.html">Profile</a>
+            </nav>
+            <nav class="footer-links" aria-label="Contact and social links">
+                <a href="mailto:mugishahonori98@gmail.com">Email</a>
+                <a href="https://wa.me/250783981828" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="https://github.com/mugishahonori98-dev/Portfolio-live" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://vercel.com/honorine2" target="_blank" rel="noopener noreferrer">Vercel</a>
+            </nav>
+            <p>&copy; 2026 Honorine Mugisha. Designed &amp; built with curiosity.</p>
+            <a href="#">Back to top <span aria-hidden="true">&uarr;</span></a>
+        </div>
+    </footer>
 </body>
 </html>

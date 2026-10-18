@@ -128,26 +128,26 @@
                         <span>My toolkit</span>
                     </div>
                     <h2 id="skills-title">Skills in progress<span>.</span></h2>
-                    <p>Learning the tools that turn creative ideas into meaningful solutions.</p>
+                    <p>Building foundations through practice. Tools and Collaboration: learning GitHub and VS Code, and developing Documentation, Research, Presentation, and Teamwork skills.</p>
                 </div>
 
                 <div class="skills-grid">
                     <article class="skill-card">
                         <span class="skill-number">01</span>
-                        <h3>Web foundations</h3>
-                        <p>HTML, CSS, responsive layouts, and accessible page structure.</p>
+                        <h3>Web Foundations</h3>
+                        <p>Learning Semantic HTML, CSS, Flexbox, and CSS Grid. Building foundations in Responsive design, Accessibility, and Basic SEO.</p>
                         <span class="skill-arrow" aria-hidden="true">↗</span>
                     </article>
                     <article class="skill-card">
                         <span class="skill-number">02</span>
                         <h3>Programming</h3>
-                        <p>Python, JavaScript, problem solving, and logical thinking.</p>
+                        <p>Developing Python fundamentals and JavaScript fundamentals through Functions, Conditions and loops, Debugging, Problem solving, and Git basics.</p>
                         <span class="skill-arrow" aria-hidden="true">↗</span>
                     </article>
                     <article class="skill-card">
                         <span class="skill-number">03</span>
-                        <h3>Connected systems</h3>
-                        <p>IoT concepts, sensors, data collection, and Django basics.</p>
+                        <h3>IoT and Connected Systems</h3>
+                        <p>Exploring Arduino, RFID, Sensors, and Microcontrollers. Learning Data collection, Dashboard concepts, Device communication, and Django basics.</p>
                         <span class="skill-arrow" aria-hidden="true">↗</span>
                     </article>
                 </div>
@@ -155,7 +155,8 @@
         </section>
 
         <section class="section projects-section" id="projects" aria-labelledby="projects-title">
-            <div class="container">
+            <div class=
+            "container">
                 <div class="section-heading projects-heading">
                     <div>
                         <div class="section-label">
@@ -170,55 +171,57 @@
 
                 <div class="projects-list">
                     <article class="project-card project-featured">
-                        <div class="project-visual attendance-visual">
-                            <span class="project-badge">Featured concept</span>
-                            <div class="attendance-screen">
-                                <span class="screen-dot"></span>
-                                <span class="screen-line screen-line-long"></span>
-                                <span class="screen-line"></span>
-                                <span class="screen-line screen-line-short"></span>
+                        <div class="project-visual attendance-visual concept-visual"><span class="project-badge">Featured concept</span>
+                            <div class="concept-art" role="img" aria-label="Prototype idea: an RFID card scan would feed a future attendance dashboard. Wireframe only.">
+                                <div class="rfid-concept"><span class="rfid-card" aria-hidden="true"></span><span class="scan-rings" aria-hidden="true"></span><span class="concept-part-label">RFID scan</span></div>
+                                <span class="concept-arrow" aria-hidden="true">&rarr;</span>
+                                <div class="dashboard-concept"><span class="wireframe-heading">Dashboard</span><span class="wireframe-row">Student <i></i></span><span class="wireframe-row">Time <i></i></span><span class="wireframe-row">Status <i></i></span></div>
                             </div>
-                            <span class="visual-caption">01 / 03</span>
-                        </div>
+                            <span class="concept-flow-label">Planned flow: scan &rarr; record &rarr; review</span>
+                            <span class="visual-caption">01 / 03 &middot; Prototype idea</span></div>
                         <div class="project-info">
                             <p class="project-type">IoT · Beginner project</p>
                             <h3>IoT Smart Attendance System</h3>
                             <p>
-                                A connected attendance concept that uses RFID cards
-                                to record student check-ins quickly and accurately.
+                                Manual attendance can be slow, difficult to review, and vulnerable to recording errors.
+                                This learning concept proposes an RFID card reader and an Arduino or
+                                compatible microcontroller, followed by a planned backend or data store
+                                and a future attendance dashboard. Student lookup, timestamps, attendance
+                                status, duplicate scan prevention, summaries, and export remain planned.
                             </p>
                             <div class="project-meta">
-                                <span>RFID</span><span>Arduino</span><span>Web dashboard</span>
+                                <span>RFID</span><span>Arduino</span><span>Sensors</span><span>Django</span><span>SQLite</span><span>Dashboard</span>
                             </div>
+                            <p class="project-status">Concept &middot; Planned implementation</p>
                             <a class="project-link" href="project-attendance.html">View case study <span aria-hidden="true">↗</span></a>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-visual water-visual">
-                            <span class="project-index">02 / 03</span>
-                            <span class="water-drop" aria-hidden="true">⌁</span>
-                            <span class="visual-caption">Clean data<br>better decisions</span>
-                        </div>
+                        <div class="project-visual water-visual concept-visual"><span class="project-badge">Concept</span><span class="project-index">02 / 03</span>
+                            <div class="concept-art concept-sensor-art" role="img" aria-label="Prototype idea: a sensor would collect water readings for a future monitoring dashboard. No measured data shown."><div class="water-vessel" aria-hidden="true"><span class="sensor-probe"></span><span class="water-surface"></span></div><span class="concept-part-label">Water sensing</span></div>
+                            <span class="concept-flow-label">Planned flow: sensor &rarr; readings &rarr; dashboard</span>
+                            <span class="visual-caption">Prototype idea &middot; Future implementation</span></div>
                         <div class="project-info">
                             <p class="project-type">IoT · Beginner project</p>
                             <h3>Water Quality Monitor</h3>
-                            <p>Monitoring unusual changes in stored water using sensors and a simple dashboard.</p>
-                            <div class="project-meta"><span>Sensors</span><span>Python</span></div>
+                            <p>Changes in stored water may not be noticed early. Sensors would collect readings and show unusual changes through a simple monitoring dashboard.</p>
+                            <div class="project-meta"><span>Sensors</span><span>Arduino</span><span>Python</span><span>Threshold alerts</span><span>Data dashboard</span></div>
+                            <p class="project-status">Beginner IoT concept</p>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-visual garden-visual">
-                            <span class="project-index">03 / 03</span>
-                            <span class="garden-sun" aria-hidden="true">☼</span>
-                            <span class="visual-caption">Grow smarter<br>with less waste</span>
-                        </div>
+                        <div class="project-visual garden-visual concept-visual"><span class="project-badge">Concept</span><span class="project-index">03 / 03</span>
+                            <div class="concept-art concept-sensor-art" role="img" aria-label="Prototype idea: a soil-moisture sensor would provide a watering indication. No live readings shown."><div class="plant-concept" aria-hidden="true"><span class="plant-stem"></span><span class="plant-pot"></span><span class="sensor-probe"></span></div><span class="concept-part-label">Soil moisture sensing</span></div>
+                            <span class="concept-flow-label">Planned flow: soil &rarr; sensor &rarr; indication</span>
+                            <span class="visual-caption">Prototype idea &middot; Future implementation</span></div>
                         <div class="project-info">
                             <p class="project-type">IoT · Beginner project</p>
                             <h3>Smart Plant Monitor</h3>
-                            <p>Helping plants thrive by measuring soil moisture and reminding users when to water.</p>
-                            <div class="project-meta"><span>Arduino</span><span>Moisture sensor</span></div>
+                            <p>Plants may be forgotten or overwatered. A soil-moisture sensor would measure dryness and provide a simple watering indication.</p>
+                            <div class="project-meta"><span>Arduino</span><span>Moisture sensor</span><span>Embedded logic</span><span>Automation</span></div>
+                            <p class="project-status">Beginner IoT concept</p>
                         </div>
                     </article>
                 </div>
@@ -249,19 +252,23 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <a class="brand" href="#home"><img class="brand-logo" src="logo.svg" alt=""><span class="brand-name">Honorine<span>.</span></span></a>
-            <p>Designed &amp; built with curiosity · © 2026</p>
-            <div class="footer-links">
+            <a class="brand" href="index.html" aria-label="Honorine Mugisha home"><img class="brand-logo" src="logo.svg" alt=""><span class="brand-name">Honorine<span>.</span></span></a>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
                 <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
                 <a href="cv.html">Profile</a>
+            </nav>
+            <nav class="footer-links" aria-label="Contact and social links">
                 <a href="mailto:mugishahonori98@gmail.com">Email</a>
                 <a href="https://wa.me/250783981828" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                 <a href="https://github.com/mugishahonori98-dev/Portfolio-live" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://vercel.com/honorine2" target="_blank" rel="noopener noreferrer">Vercel</a>
-            </div>
-            <a href="#home">Back to top ↑</a>
+            </nav>
+            <p>&copy; 2026 Honorine Mugisha. Designed &amp; built with curiosity.</p>
+            <a href="#">Back to top <span aria-hidden="true">&uarr;</span></a>
         </div>
     </footer>
 </body>
